@@ -1,0 +1,32 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro numero, maior, menor, i
+
+		para(i = 1; i <= 50; i++)
+		{
+			escreva("Digite um número: ")
+			leia(numero)
+
+			se(i == 1)
+			{
+				maior = numero
+				menor = numero
+			}
+
+			se(numero > maior)
+			{
+				maior = numero
+			}
+
+			se(numero < menor)
+			{
+				menor = numero
+			}
+		}
+
+		escreva("\nMaior valor: ", maior)
+		escreva("\nMenor valor: ", menor)
+	}
+}
