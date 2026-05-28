@@ -1,0 +1,40 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro filhos, total_filhos = 0, pessoas100 = 0, i
+		real salario, soma_salario = 0, maior_salario = 0
+		real media_salario, media_filhos, percentual
+
+		para(i = 1; i <= 3; i++)
+		{
+			escreva("Digite o salário: ")
+			leia(salario)
+
+			escreva("Digite o número de filhos: ")
+			leia(filhos)
+
+			soma_salario = soma_salario + salario
+			total_filhos = total_filhos + filhos
+
+			se(salario > maior_salario)
+			{
+				maior_salario = salario
+			}
+
+			se(salario <= 100)
+			{
+				pessoas100++
+			}
+		}
+
+		media_salario = soma_salario / 3
+		media_filhos = total_filhos / 3.0
+		percentual = (pessoas100 * 100) / 3.0
+
+		escreva("\nMédia salarial: ", media_salario)
+		escreva("\nMédia de filhos: ", media_filhos)
+		escreva("\nMaior salário: ", maior_salario)
+		escreva("\nPercentual até R$100: ", percentual, "%")
+	}
+}
