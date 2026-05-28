@@ -1,0 +1,31 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro numero, positivos = 0
+		inteiro negativos = 0, zeros = 0, i
+
+		para(i = 1; i <= 20; i++)
+		{
+			escreva("Digite um número: ")
+			leia(numero)
+
+			se(numero > 0)
+			{
+				positivos++
+			}
+			senao se(numero < 0)
+			{
+				negativos++
+			}
+			senao
+			{
+				zeros++
+			}
+		}
+
+		escreva("\nPositivos: ", positivos)
+		escreva("\nNegativos: ", negativos)
+		escreva("\nZeros: ", zeros)
+	}
+}
